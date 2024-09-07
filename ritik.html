@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    <title>Ritik-Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: rgb(29, 29, 97);
+            justify-content: space-around;
+            display: flex;
+            align-items: center;
+            padding: 0px;
+            height: 80px;
+            color: white;
+        }
+
+        nav ul {
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a:hover {
+            color: rgb(125, 95, 207);
+            font-size: 1.04rem;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+
+            color: white;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            justify-content: space-around;
+            display: flex;
+            margin: 10px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .rightsection {
+            width: 30%;
+            margin: 0;
+        }
+
+        .rightsection img {
+            width: 100%;
+        }
+
+
+        .leftsection {
+            margin: 80px 0 0 0;
+            font-size: 2rem;
+
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+        .leftsection .btn{
+           background-color: rgb(9, 7, 12);
+            padding:6px ;
+            border: 2px solid white;
+            color: white;
+            border-radius: 20px;
+        }
+
+        .sectionprofile {
+            justify-content: space-around;
+            display: flex;
+            margin: 10px 0;
+            align-items: center;
+        }
+
+        .firstpart {
+            position: relative;
+            top: -2px;
+            width: 55%;
+            right: 14px;
+
+        }
+
+        .secondpart {
+            width: 30%;
+        }
+
+        .sectionprofile h1 {
+            color: blueviolet;
+            font-size: 40px;
+            margin-left: 0px;
+
+        }
+
+        .sectionprofile {
+            margin-left: 100px;
+        }
+
+        .sectionprofile .secondpart img {
+            float: left;
+            width: 55%;
+            height: auto;
+            border: 150%;
+            border-radius: 100%;
+
+
+
+
+        }
+
+        .sectionprofile .firstpart h1:hover {
+            color: rgb(157, 26, 146);
+
+            font-size: 50px;
+
+
+        }
+
+        .secondsection {
+            margin-left: 100px;
+            height: 400px;
+        }
+
+        .text-gray {
+            color: rgb(117, 108, 108);
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+            color: blueviolet;
+        }
+
+
+        .secondsection .line {
+            background: rgb(136, 134, 134);
+            height: 3px;
+            width: 84vw;
+            margin: 70px 0;
+            color: rgb(187, 172, 172);
+            display: flex;
+
+        }
+
+        .secondsection .vertical {
+            height: 80px;
+            width: 1.2px;
+            background: rgb(187, 181, 181);
+            margin: 0 178px;
+            ;
+
+
+        }
+
+        .secondsection .imagefirst {
+            width: 40px;
+            height: 40 px;
+            position: relative;
+            top: -43px;
+            left: -16px;
+
+        }
+
+        .secondsection .imagesecond {
+            width: 40px;
+            height: 40 px;
+            position: relative;
+            top: -43px;
+            left: -16px;
+
+
+        }
+
+        .secondsection .imagethird {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            top: -43px;
+            left: -16px;
+
+        }
+
+        .secondsection .vertical-text {
+            position: relative;
+            top: 33px;
+            width: 200px;
+            right: px;
+            color: mediumseagreen;
+        }
+
+        .secondsection .vertical-desc {
+            position: relative;
+            top: 55px;
+            width: 200px;
+            right: 0;
+            color: #91b3a0;
+            font-size: 13px;
+        }
+
+
+        #element {
+
+            color: rgb(130, 48, 207);
+        }
+
+        .sectionthree {
+            height: 500px;
+
+        }
+
+        .sectionthree .sentence {
+            font-size: 18px;
+            color: rgb(140, 124, 124);
+            position: relative;
+            top: 15px;
+            left: 80px;
+        }
+
+        .sectionthree h1 {
+            font-size: 40px;
+            color: blueviolet;
+            margin: 10px 0;
+            margin-left: 6%;
+        }
+
+        .sectionthree h1:hover {
+            color: rgb(226, 43, 192);
+            font-size: 50px;
+        }
+
+        .sectionthree img {
+            width: 20%;
+            margin-left: 90px;
+            position: relative;
+            display: inline-block
+        }
+
+        .lastsection {
+            background-color: rgb(12, 6, 22);
+    
+        }
+
+        .lastsection {
+            display: flex;
+            padding: 90px 0px;
+            justify-content: space-evenly;
+        }
+
+        .lastsection ul {
+            list-style: none;
+
+        }
+
+        .lastsection>div {
+            width: 220px;
+            font-size: 15px;
+
+
+        }
+
+        footer .rights {
+            text-align: center;
+            color: rgb(138, 112, 112);
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'poppins', sans-serif;
+
+        }
+
+        main hr {
+            border: 0;
+            margin: 40px 80px;
+            height: 2px;
+            background: rgb(75, 32, 116);
+        }
+    </style>
+    <link rel="stylesheet" href="ritik.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Ritik's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a target="blank" href>Home</li></a>
+                <li><a href="">About</li></a>
+                <li><a href="">Skills</li></a>
+                <li><a href="">Project</li></a>
+                <li><a href="">Contact Me</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,My name is <span class="purple">Ritik </span>
+                <div>and I am a Passionate </div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="developer.webp" alt="animated image of web developer">
+            </div>
+        </section>
+        <hr>
+        </section>
+        <section class="sectionprofile">
+
+            <div class="firstpart">
+                <div>
+                    <h1>About Me</h1>
+                </div>
+                <br>
+                <br>
+                <br>
+                <p>A self-motivated final year graduating student looking for a challenging position in the technical
+                    and analytical field where i can utilize the extensive knowledge i have gained during my course and
+                    developing my personal skills by using them for the betterment of the organization</p>
+            </div>
+            <div class="secondpart">
+                <img src="developer photo.jpeg" alt="deveoper photo">
+                <div class="content"></div>
+
+            </div>
+
+
+        </section>
+        <hr>
+
+
+        <section class="secondsection">
+            <span class="text-gray"> My Education so far...</span>
+            <h1>Acadamic Learning</h1>
+            <div class="line">
+                <div class="vertical"><img class="imagefirst" src="student.png" alt="school student">
+
+                    <div class="vertical-text">secondary school certificate (2017)
+                    </div>
+                    <div class="vertical-desc">completed my 10th from Yashoda High School , Nagpur
+                    </div>
+                </div>
+
+                <div class="vertical"><img class="imagesecond" src="college.png" alt="college student">
+
+                    <div class="vertical-text">Higher Secondary Certificate (2019)
+                    </div>
+                    <div class="vertical-desc">completed my 12th from DR.M.K.Umathe College of Science , Nagpur
+                    </div>
+                </div>
+
+                <div class="vertical"><img class="imagethird" src="graduated.png" alt="B.tech student">
+
+                    <div class="vertical-text"> B.tech from RTMNU University
+                        (2021-2025)
+                    </div>
+                    <div class="vertical-desc">persuing B.tech from Rashtrasant Tukodoji Maharaj Nagpur university in
+                        Electronic and Tele-Communication Branch From Priyadarshini college of engineering, Nagpur
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+        <hr>
+        <section class="sectionthree">
+            <div class="sentence">Excellence in...</div>
+
+            <div>
+                <h1>Skills</h1>
+            </div>
+            <div class="c">
+                <img src="develop.png" alt=" c and c++ logo" width="300px">
+                <img src="java.png" alt="java logo" width="300px">
+                <img src="data.png" alt="web development logo" width="300px">
+            </div>
+
+
+
+        </section>
+    
+
+    </main>
+
+
+    <footer>
+        <div class="lastsection">
+            <div>
+                Ritik's Developer Portfolio
+            </div>
+
+            <div class="second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>contact</li>
+                </ul>
+
+            </div>
+            <div class="third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>contact</li>
+                </ul>
+
+            </div>
+            <div class="fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>contact</li>
+                </ul>
+
+            </div>
+        </div>
+            <div class="rights">
+                www.ritiksportfolio.com | All right Reserverd
+            </div>
+
+    
+    </footer>
+    <script src="ritik.s"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'a Coder'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+
+</html>
